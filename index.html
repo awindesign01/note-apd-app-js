@@ -4,35 +4,77 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./Css/Style.css" />
 		<title>Note Pad App</title>
-		<script src="./Js/Main.js" type="module"></script>
+		<link rel="stylesheet" href="./style.css" />
+		<!-- font google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- font awesome icon -->
+		<link rel="stylesheet" href="./fontawesome icon/fontawesome-free-5.15.3-web/css/all.css" />
 	</head>
-	<body>
-		<div class="notes" id="App">
-			<!-- <div class="div_left">
-				<div class="div_left__text_header">
-					<input type="text" placeholder="title"/>
-				</div>
-				<div class="div_left__textarea">
-					<textarea name="" id="" cols="30" rows="10" placeholder="note"></textarea>
-				</div>
-			</div>
-			<div class="div_right">
-				<div class="div_right__header">
-					<header class="header">NOTE APP</header>
-				</div>
-				<div class="div_prev_notes">
-					<div class="div_prev_notes__notes">
-						<div class="name_note"><p>new note</p></div>
-						<div class="text_note"><p>hi a'm ali donyaee</p></div>
-						<div class="data_note"><p>monday 1:30 PM</p></div>
+	<body dir="ltr">
+      <!-- style true for width 1536px -->
+		<div class="container" id="app">
+			<div class="sidebar">
+				<header class="sidebar__header">
+					<button class="sidebar__header-button">
+						<i class="fas fa-plus"></i>
+						<p>New</p>
+					</button>
+				</header>
+				<aside class="sidebar__header-aside">
+					<div class="sidebar__header-aside-note">
+						<div class="note-active"></div>
+						<div class="text-note">
+							<h1>Hello world</h1>
+							<p>sssssssssssss</p>
+							<p>14:00 PM 5/4/2021</p>
+						</div>
 					</div>
-				</div>
-				<div class="div_add_notes">
-					<button class="adding_notes">ADD NOTE</button>
-				</div>
-			</div> -->
+				</aside>
+			</div>
+			<section class="notes">
+				<header class="notes__header">
+					<div class="notes__header-setting">
+						<div class="notes__header-setting-font_style">
+							<button>
+								<i class="fas fa-bold"></i>
+							</button>
+							<button>
+								<i class="fas fa-italic"></i>
+							</button>
+							<button>
+								<i class="fas fa-underline"></i>
+							</button>
+						</div>
+						<div class="notes__header-setting-text-align">
+							<button>
+								<i class="fas fa-align-left"></i>
+							</button>
+							<button>
+								<i class="fas fa-align-center"></i>
+							</button>
+							<button>
+								<i class="fas fa-align-right"></i>
+							</button>
+						</div>
+					</div>
+					<button class="notes__header-button_share">Share</button>
+				</header>
+            <section class="notes__content">
+               <div class="notes__content-div">
+                  <input type="text" id="input" placeholder="Add a title">
+                  <hr class="hr">
+                  <textarea name="" id="textarea" cols="100%" rows="100%" placeholder="add a content">
+
+                  </textarea>
+               </div>
+            </section>
+			</div>
 		</div>
 	</body>
 </html>

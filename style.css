@@ -1,0 +1,173 @@
+/* style true for width 1536px */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #eee;
+	font-family: "Nunito", sans-serif;
+}
+h1 {
+	margin: 0;
+	font-size: 1em;
+	letter-spacing: 1px;
+}
+/*
+   coment: for display center 
+*/
+html,
+body,
+.container,
+.sidebar__header-button,
+.notes__content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 95vw;
+	height: 95vh;
+	background-color: #eee;
+}
+.sidebar {
+	height: 100%;
+	width: 20%;
+	background-color: #eee;
+}
+.notes {
+	width: 80%;
+	height: 100%;
+}
+.sidebar__header,
+.notes__header {
+	width: 100%;
+	height: 6vh;
+}
+.notes__header {
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #eee;
+}
+.sidebar__header-button {
+	width: 7rem;
+	height: 100%;
+	cursor: pointer;
+	background-color: #0066ff;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	font-family: "Nunito", sans-serif;
+}
+.sidebar__header-button p {
+	font-size: 1.2em;
+}
+.sidebar__header-button i {
+	margin-right: 5px;
+}
+.sidebar__header-button:active {
+	transition: all 200ms ease;
+	background-color: #528fec;
+}
+.sidebar__header-aside {
+	width: 100%;
+	height: 88vh;
+}
+.sidebar__header-aside-note {
+	margin-top: 20px;
+	width: 100%;
+	height: 6rem;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+.note-active {
+	margin-right: 5px;
+	width: 2%;
+	height: 90%;
+	background-color: #0066ff;
+	border-radius: 50px;
+	box-shadow: 0 0 2px 1px #0066ff;
+}
+.text-note {
+	margin-left: 10px;
+	padding: 2px;
+	width: 85%;
+	height: 100%;
+	border-bottom: 2px solid #528fec;
+}
+.text-note h1 {
+	color: #0066ff;
+}
+.text-note p {
+	color: #9ca3af;
+}
+.text-note p:last-child {
+	font-size: 0.8em;
+	color: #d1d5db;
+}
+.notes__header-setting {
+	width: auto;
+	height: 100%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+.notes__header-setting div {
+	height: 100%;
+}
+.notes__header-button_share {
+	width: 7rem;
+	height: 100%;
+	cursor: pointer;
+	background-color: #d1d5db;
+	border: none;
+	border-radius: 4px;
+	color: #0066ff;
+	font-size: 1.2em;
+	font-weight: 700;
+	font-family: "Nunito", sans-serif;
+}
+.notes__header-setting-font_style,
+.notes__header-setting-text-align {
+	display: flex;
+	margin-right: 10px;
+	justify-content: start;
+	align-items: center;
+}
+.notes__header-setting-font_style button,
+.notes__header-setting-text-align button {
+	margin-right: 10px;
+	width: 20px;
+	height: 100%;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+.notes__content {
+	width: 99.8%;
+	height: 88.5vh;
+	background-color: #fff;
+	border: 2px solid #d1d5db;
+	border-radius: 10px;
+}
+.notes__content-div {
+   width: 98%;
+	height: 98%;
+}
+#input, #textarea {
+   width: 99.2%;
+   height: 2rem;
+   border: none;
+   font-size: 1.2em;
+}
+#textarea{
+   height: 79vh;
+}
+.hr{
+   background-color: #d1d5db;
+   border-color: #d1d5db;
+}
