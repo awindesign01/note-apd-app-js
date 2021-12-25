@@ -20,7 +20,8 @@ html,
 body,
 .container,
 .sidebar__header-button,
-.notes__content {
+.notes__content,
+.h1 .fa-trash-alt {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -75,6 +76,7 @@ body,
 .sidebar__header-aside {
 	width: 100%;
 	height: 88vh;
+	overflow-y: scroll;
 }
 .sidebar__header-aside-note {
 	margin-top: 20px;
@@ -83,6 +85,7 @@ body,
 	display: flex;
 	justify-content: start;
 	align-items: center;
+	cursor: pointer;
 }
 .note-active {
 	margin-right: 5px;
@@ -103,11 +106,11 @@ body,
 	color: #0066ff;
 }
 .text-note p {
-	color: #9ca3af;
+	color: #6b7077;
 }
 .text-note p:last-child {
 	font-size: 0.8em;
-	color: #d1d5db;
+	color: #9ca3af;
 }
 .notes__header-setting {
 	width: auto;
@@ -146,6 +149,7 @@ body,
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+	color: gray;
 }
 .notes__content {
 	width: 99.8%;
@@ -155,19 +159,33 @@ body,
 	border-radius: 10px;
 }
 .notes__content-div {
-   width: 98%;
+	width: 98%;
 	height: 98%;
 }
-#input, #textarea {
-   width: 99.2%;
-   height: 2rem;
-   border: none;
-   font-size: 1.2em;
+#input,
+#textarea {
+	width: 99.2%;
+	height: 2rem;
+	border: none;
+	font-size: 1.2em;
 }
-#textarea{
-   height: 79vh;
+#textarea {
+	height: 79vh;
 }
-.hr{
-   background-color: #d1d5db;
-   border-color: #d1d5db;
+.hr {
+	background-color: #d1d5db;
+	border-color: #d1d5db;
+}
+.h1 {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.h1 .fa-trash-alt {
+	width: 25px;
+	height: 25px;
+	background-color: #ff2351;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 0.8em;
 }
