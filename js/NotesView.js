@@ -133,9 +133,9 @@ export default class NotesView {
 			item.classList.remove();
 		});
 
-		this.app
-			.querySelector(`.sidebar__header-aside-note[data-note-id="${note.id}"]`)
-			.classList.add(".sidebar__header-aside");
+		const cc = this.app.querySelector(`.sidebar__header-aside-note[data-note-id="${note.id}"]`);
+		cc.classList.add(".sidebar__header-aside");
+		
 	}
 
 	updatedNotePreviewVisibility(vis) {

@@ -19,7 +19,7 @@ export default class App {
 
 		// todo comment: set active notes
 		this.activeNote = notes;
-		this.view.updatedActiveNote(notes);
+		this.view.updatedActiveNote(notes);	
 	}
 
 	_handlers() {
